@@ -7,4 +7,4 @@ app.get('/', (req, res) => {
     res.send('An alligator approaches!');
 });
 
-app.listen(5000, () => console.log('Gator app listening on port 5000!'));
+app.listen(process.env.PORT || 5000, () => console.log('Gator app listening on port 5000!'));
